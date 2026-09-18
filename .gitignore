@@ -1,0 +1,15 @@
+# Every stage writes its regeneratable output here; never commit these.
+*/output/
+05_V3_train_holdout_sets/output/
+HuRI-V3-*/
+
+# Decompressed raw data (keep only the tracked .xz)
+data/raw/*.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor cruft
+.DS_Store
+*.swp
