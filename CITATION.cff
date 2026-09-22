@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: "HuRI-traing-set_V3: scripts and recipes for building a V3-style PPI training/holdout dataset from HuRI"
+message: "If you use this repository, please cite it — and cite HuRI (Luck et al. 2020) for the underlying interaction data."
+type: software
+authors:
+  - family-names: "Salehi-Ashtiani"
+    given-names: "Kourosh"
+    email: "kourosh.salehi.ashtiani@gmail.com"
+repository-code: "https://github.com/kouroshSA/HuRI-traing-set_V3"
+license-url: "https://github.com/kouroshSA/HuRI-traing-set_V3/blob/main/LICENSE.md"
+abstract: >-
+  Cleaning, homology tabulation, homology-safe degree-matched negative-pair
+  generation, master assembly, and 10 Monte-Carlo cross-validation train/holdout
+  splits (each with held-out PRS, RRS and three partner-randomized decoy controls)
+  for the HuRI human binary protein-protein interactome. Ships the starting data
+  and every script, Methods document and recipe needed to reproduce the workflow;
+  the final datasets are regeneratable rather than stored.
+keywords:
+  - protein-protein interaction
+  - HuRI
+  - interactome
+  - dataset construction
+  - negative sampling
+  - cross-validation
+references:
+  - type: article
+    title: "A reference map of the human binary protein interactome"
+    authors:
+      - family-names: Luck
+        given-names: Katja
+      - family-names: Kim
+        given-names: Dae-Kyum
+      - family-names: Lambourne
+        given-names: Luke
+    journal: "Nature"
+    volume: 580
+    start: 402
+    end: 408
+    year: 2020
+    doi: "10.1038/s41586-020-2188-x"
+    url: "https://www.nature.com/articles/s41586-020-2188-x"
+    notes: "Source of the underlying binary interactome data; cite this for any use of the data or datasets derived from it."

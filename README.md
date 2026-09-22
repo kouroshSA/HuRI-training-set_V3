@@ -86,10 +86,40 @@ machine-specific absolute paths anywhere in this repo. Each stage's
 root, writing outputs into an `output/` folder inside that stage (ignored by
 git — see `.gitignore`).
 
+## Citing this work
+
+**If you use the data, or any dataset derived from it, cite HuRI:**
+
+> Luck, K., Kim, D.-K., Lambourne, L., *et al.* **A reference map of the human
+> binary protein interactome.** *Nature* **580**, 402–408 (2020).
+> https://doi.org/10.1038/s41586-020-2188-x
+
+The starting table in `data/raw/` is derived from that work, distributed by
+CCSB / Dana-Farber Cancer Institute via the
+[Interactome Atlas](https://www.interactome-atlas.org/) under CC BY 4.0.
+
+**If you use the code, methods or recipes here, also cite this repository** —
+see [`CITATION.cff`](CITATION.cff), or the "Cite this repository" button above.
+Citation is a condition of the licence, not a courtesy (Additional Term 1).
+
+Full reference list: [`REFERENCES.md`](REFERENCES.md).
+
 ## License / reuse
 
-Private repository. The vendored pipeline in
-`05_V3_train_holdout_sets/pipeline_src/` carries its own license (PolyForm
-Noncommercial 1.0.0 — see that folder's `LICENSE`); everything else in this
-repo is unlicensed by default (all rights reserved) unless/until a license
-is added.
+**[PolyForm Noncommercial License 1.0.0](LICENSE.md)**, with Additional Terms.
+Noncommercial use, modification and redistribution are permitted; commercial use
+requires a separate licence. Citation is mandatory. Provided as-is, with no
+warranty and no liability.
+
+The licence is **scoped**, and this matters:
+
+| | terms |
+|---|---|
+| scripts, Methods, recipes, docs | PolyForm Noncommercial 1.0.0 + Additional Terms |
+| `data/raw/huri_interactome_uniprotID_seqs.csv.xz` | **CC BY 4.0** (HuRI / CCSB) — unchanged, and CC BY 4.0 **permits commercial use** |
+| `05_V3_train_holdout_sets/pipeline_src/` | its own vendored `LICENSE` |
+
+The noncommercial restriction applies to the original contributions of this
+repository only. It does **not** — and legally could not — restrict the
+third-party HuRI data, which remains available to you under its own CC BY 4.0
+terms. See the Scope section at the top of [`LICENSE.md`](LICENSE.md).
