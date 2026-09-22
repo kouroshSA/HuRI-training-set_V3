@@ -1,4 +1,4 @@
-# HuRI-traing-set_V3
+# HuRI-training-set_V3
 
 Code, methods, and recipes for turning the raw HuRI human binary
 protein-protein interaction table into a full V3-style training/holdout
@@ -115,11 +115,15 @@ The licence is **scoped**, and this matters:
 
 | | terms |
 |---|---|
-| scripts, Methods, recipes, docs | PolyForm Noncommercial 1.0.0 + Additional Terms |
-| `data/raw/huri_interactome_uniprotID_seqs.csv.xz` | **CC BY 4.0** (HuRI / CCSB) — unchanged, and CC BY 4.0 **permits commercial use** |
+| scripts, Methods, recipes, docs — **what is original here** | PolyForm Noncommercial 1.0.0 + Additional Terms |
+| `data/raw/huri_interactome_uniprotID_seqs.csv.xz` | **CC BY 4.0** (HuRI / CCSB) |
+| **every dataset this workflow generates from it** — cleaned tables, homology tables, negative pairs, master assembly, train/holdout/decoy splits | **CC BY 4.0** — derivatives of the HuRI data |
 | `05_V3_train_holdout_sets/pipeline_src/` | its own vendored `LICENSE` |
 
-The noncommercial restriction applies to the original contributions of this
-repository only. It does **not** — and legally could not — restrict the
-third-party HuRI data, which remains available to you under its own CC BY 4.0
-terms. See the Scope section at the top of [`LICENSE.md`](LICENSE.md).
+The noncommercial restriction covers **only what is original to this
+repository** — the code and methods. It does not cover the HuRI data or
+anything derived from it.
+
+**So: you may use the datasets this pipeline generates commercially.** Cite
+Luck et al. 2020 and the Interactome Atlas, as CC BY 4.0 requires. See the Scope
+section at the top of [`LICENSE.md`](LICENSE.md).

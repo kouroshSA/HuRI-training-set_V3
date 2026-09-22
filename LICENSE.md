@@ -1,36 +1,60 @@
 Required Notice: Copyright © 2026 Kourosh Salehi-Ashtiani. All rights reserved.
-Required Notice: HuRI-traing-set_V3 —
-https://github.com/kouroshSA/HuRI-traing-set_V3 — you must cite this repository
+Required Notice: HuRI-training-set_V3 —
+https://github.com/kouroshSA/HuRI-training-set_V3 — you must cite this repository
 when you use it or any derivative (see CITATION.cff), and you must separately
 cite HuRI (Luck et al., Nature 580:402–408, 2020) for the underlying
 interaction data.
 
 ## Scope — what this license does and does not cover
 
-**Covered.** The original contributions of this repository: the scripts, the
-Methods and recipe documents, the pipeline configuration, and the
-documentation. These are licensed under the PolyForm Noncommercial License
-1.0.0 (reproduced in full below), **as supplemented by the Additional Terms in
-this document.** Noncommercial use is permitted under that license. **Any
-commercial use requires a separate commercial license** from the copyright
-holder.
+**The principle: this license covers only what is original to this repository.**
+It does not cover, and does not purport to cover, third-party material or
+anything derived from it.
 
-**NOT covered — third-party data.** The file
+### Covered
+
+The original contributions of this repository, and nothing else:
+
+- the scripts in every stage directory
+- the Methods documents, recipes, and README files written for this project
+- the pipeline configuration and parameter choices
+- this repository's documentation
+
+These are licensed under the PolyForm Noncommercial License 1.0.0 (reproduced
+in full below), **as supplemented by the Additional Terms in this document.**
+Noncommercial use is permitted under that license. **Any commercial use
+requires a separate commercial license** from the copyright holder.
+
+### Not covered
+
+**HuRI data, and any dataset derived from it.** The file
 `data/raw/huri_interactome_uniprotID_seqs.csv.xz` is derived from the HuRI
-project's binary protein-protein interaction data, which is distributed by
-CCSB / Dana-Farber Cancer Institute under **Creative Commons Attribution 4.0
-International (CC BY 4.0)**. That data remains under CC BY 4.0. Nothing in
-this document restricts your rights in it — **CC BY 4.0 permits commercial
-use, and this license does not and cannot take that away.** Your obligation
-with respect to that data is the attribution CC BY 4.0 requires: cite Luck et
-al. 2020 and the Interactome Atlas (https://www.interactome-atlas.org/).
+project's binary protein-protein interaction data, distributed by CCSB /
+Dana-Farber Cancer Institute under **Creative Commons Attribution 4.0
+International (CC BY 4.0)**.
 
-**NOT covered — vendored code.** `05_V3_train_holdout_sets/pipeline_src/` is a
-pinned snapshot of https://github.com/kouroshSA/ppi-v3-dataset-pipeline and
-carries its own LICENSE file, which governs it.
+That exclusion extends to **everything this workflow produces from it** — the
+cleaned and standardized interaction tables, the homology tables, the generated
+negative pairs, the master assembly, and the train/holdout/decoy splits. Those
+are derivatives of the HuRI data and are **not** subject to the noncommercial
+restriction in this license. Your rights in them come from CC BY 4.0, which
+**permits commercial use**; your obligation is the attribution CC BY 4.0
+requires — cite Luck et al. 2020 and the Interactome Atlas
+(https://www.interactome-atlas.org/).
 
-Where a file is covered by more than one of the above, the more permissive
-terms apply to that file.
+To be unambiguous: **you may use the datasets this pipeline generates
+commercially.** The noncommercial term restricts reuse of the *code and
+methods*, not the *data*.
+
+**Vendored code.** `05_V3_train_holdout_sets/pipeline_src/` is a pinned
+snapshot of https://github.com/kouroshSA/ppi-v3-dataset-pipeline and carries
+its own LICENSE file, which governs it.
+
+**Anything else third-party** added to this repository in future, which remains
+under whatever terms it arrives with.
+
+Where a file could be read as falling under more than one of the above, **the
+more permissive terms apply.**
 
 ---------------------------------------------------------------------------
 
@@ -51,9 +75,9 @@ modified version of it — in any work, including research, software, products,
 services, publications, presentations, or models trained or built with its help
 — you must give clear credit to this project and cite this repository.
 
-At a minimum, attribution must state the project name (**HuRI-traing-set_V3**),
+At a minimum, attribution must state the project name (**HuRI-training-set_V3**),
 the copyright holder (**Kourosh Salehi-Ashtiani**), and the repository URL
-(**https://github.com/kouroshSA/HuRI-traing-set_V3**). Academic, scholarly, or
+(**https://github.com/kouroshSA/HuRI-training-set_V3**). Academic, scholarly, or
 scientific works must additionally cite the repository in their references using
 the citation metadata provided in `CITATION.cff` (equivalently, the repository's
 "Cite this repository" information). This obligation applies whether your use is

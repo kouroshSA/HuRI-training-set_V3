@@ -1,13 +1,13 @@
 cff-version: 1.2.0
-title: "HuRI-traing-set_V3: scripts and recipes for building a V3-style PPI training/holdout dataset from HuRI"
+title: "HuRI-training-set_V3: scripts and recipes for building a V3-style PPI training/holdout dataset from HuRI"
 message: "If you use this repository, please cite it — and cite HuRI (Luck et al. 2020) for the underlying interaction data."
 type: software
 authors:
   - family-names: "Salehi-Ashtiani"
     given-names: "Kourosh"
     email: "kourosh.salehi.ashtiani@gmail.com"
-repository-code: "https://github.com/kouroshSA/HuRI-traing-set_V3"
-license-url: "https://github.com/kouroshSA/HuRI-traing-set_V3/blob/main/LICENSE.md"
+repository-code: "https://github.com/kouroshSA/HuRI-training-set_V3"
+license-url: "https://github.com/kouroshSA/HuRI-training-set_V3/blob/main/LICENSE.md"
 abstract: >-
   Cleaning, homology tabulation, homology-safe degree-matched negative-pair
   generation, master assembly, and 10 Monte-Carlo cross-validation train/holdout
